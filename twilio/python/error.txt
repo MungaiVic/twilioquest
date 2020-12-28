@@ -1,0 +1,39 @@
+Executing script: /home/monty/twilioquest/twilio/python/branching.py
+Script arguments: -1,1
+Output:
+  File "/home/monty/twilioquest/twilio/python/branching.py", line 6
+    int(result) = first_input + second_input
+    ^
+SyntaxError: cannot assign to function call
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 72, in apport_excepthook
+    from apport.fileutils import likely_packaged, get_recent_crashes
+  File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+    from apport.report import Report
+  File "/usr/lib/python3/dist-packages/apport/report.py", line 32, in <module>
+    import apport.fileutils
+  File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 12, in <module>
+    import os, glob, subprocess, os.path, time, pwd, sys, requests_unixsocket
+  File "/usr/lib/python3/dist-packages/requests_unixsocket/__init__.py", line 1, in <module>
+    import requests
+  File "/home/monty/.local/lib/python3.8/site-packages/requests/__init__.py", line 120, in <module>
+    from . import utils
+  File "/home/monty/.local/lib/python3.8/site-packages/requests/utils.py", line 27, in <module>
+    from ._internal_utils import to_native_string
+  File "/home/monty/.local/lib/python3.8/site-packages/requests/_internal_utils.py", line 11, in <module>
+    from .compat import is_py2, builtin_str, str
+  File "/home/monty/.local/lib/python3.8/site-packages/requests/compat.py", line 29, in <module>
+    import simplejson as json
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 110, in <module>
+    from decimal import Decimal
+  File "/usr/lib/python3.8/decimal.py", line 3, in <module>
+    from _decimal import *
+AttributeError: module 'numbers' has no attribute 'Number'
+
+Original exception was:
+  File "/home/monty/twilioquest/twilio/python/branching.py", line 6
+    int(result) = first_input + second_input
+    ^
+SyntaxError: cannot assign to function call
+
